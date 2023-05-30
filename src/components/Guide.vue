@@ -1,11 +1,15 @@
 <script setup>
 import { ref } from 'vue';
 
+import guide1 from './../assets/guide1.png';
+import guide2 from './../assets/guide2.png';
+import guide3 from './../assets/guide3.png';
+
 const helpDialog = ref(null);
 const guideInstructions = ref([
-	{ key: 0, imgPath: './src/assets/guide1.png', imgAlt: 'place to hold questions', description: 'Inside the shown box place your questions.' },
-	{ key: 1, imgPath: './src/assets/guide2.png', imgAlt: 'question box filled and next question button', description: 'After placing the questions inside the screen should look similar to this. Now press the "Next Question" button.' },
-	{ key: 2, imgPath: './src/assets/guide3.png', imgAlt: 'question box filled, random question picked and next question button', description: 'After the question has been picked test yourself and continue pressing the "Next Question" button until you\'re satisfied' }
+	{ key: 0, imgPath: guide1, imgAlt: 'place to hold questions', description: 'Inside the shown box place your questions.' },
+	{ key: 1, imgPath: guide2, imgAlt: 'question box filled and next question button', description: 'After placing the questions inside the screen should look similar to this. Now press the "Next Question" button.' },
+	{ key: 2, imgPath: guide3, imgAlt: 'question box filled, random question picked and next question button', description: 'After the question has been picked test yourself and continue pressing the "Next Question" button until you\'re satisfied' }
 ]);
 const guideInstructionsIndex = ref(0);
 
