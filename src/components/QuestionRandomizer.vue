@@ -40,7 +40,7 @@ const generateNextQuestion = () => {
 			<textarea class="w-full p-3 resize-none border-2 border-black rounded focus-visible:border-[3px]" name="questions" id="questions" rows="10"
 						ref="questionsInput" @input="textareaInputHandler"></textarea>
 			
-			<p v-if="showQuestion" class="bg-green-200 p-5 rounded" id="result">{{ shuffledQuestions[0] }}</p>
+			<output v-if="showQuestion" class="block bg-green-200 p-5 rounded" id="result">{{ shuffledQuestions[0] }}</output>
 			
 			<button class="mt-4 float-right p-3 rounded btn-green"
 						@click="generateNextQuestion">
