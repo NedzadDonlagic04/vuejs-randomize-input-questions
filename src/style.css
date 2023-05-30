@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,5 +10,11 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
+}
+
+@layer components {
+	.btn-green {
+		@apply border-2 border-green-700 bg-green-200 transition-colors ease-in-out duration-200 hover:bg-green-300;
+	}
 }
